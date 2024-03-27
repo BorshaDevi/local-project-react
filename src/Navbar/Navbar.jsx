@@ -46,7 +46,9 @@ const Navbar = () => {
           
           
           </div>
-            <ul className="md:flex justify-center items-center">
+            {/* <ul className={`md:flex justify-center items-center absolute ${open? '-top-24 duration-1000' : ' top-8 duration-1000'}`}> */}
+            <ul className={`md:flex justify-center items-center absolute ${open? 'hidden' : ''}`}>
+            {/* <ul className={`md:flex justify-center items-center absolute shadow-md  md:static ${open? '-top-28 duration-1000' : 'bg-white shadow-md top-8 duration-1000'} `}> */}
 
             {
                 routes.map(route => <Navber key={route.id} route={route} ></Navber>)
